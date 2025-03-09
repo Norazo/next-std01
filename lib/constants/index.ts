@@ -1,0 +1,12 @@
+export const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://prostore.norazo.com";
+export const siteName = process.env.NEXT_PUBLIC_SITE_NAME || "Prostore";
+export const siteDescription = process.env.NEXT_PUBLIC_SITE_DESCRIPTION || "Prostore - Norazo";
+export const siteKeywords = ["Prostore", "Norazo", "E-commerce", "Online Shopping", "E-commerce"];
+export const siteLanguage = process.env.NEXT_PUBLIC_SITE_LANGUAGE || "en";
+export const siteTheme = process.env.NEXT_PUBLIC_SITE_THEME || "light";
+export const siteAuthor = process.env.NEXT_PUBLIC_SITE_AUTHOR || "Prostore";
+export const siteCopyright = process.env.NEXT_PUBLIC_SITE_COPYRIGHT || "Prostore";
+export const siteVersion = process.env.NEXT_PUBLIC_SITE_VERSION || "1.0.0";
+export const siteIcon = process.env.NEXT_PUBLIC_SITE_ICON || "https://prostore.norazo.com/favicon.ico";
+export const siteFavicon = process.env.NEXT_PUBLIC_SITE_FAVICON || "https://prostore.norazo.com/favicon.ico";
+export const siteLogo = process.env.NEXT_PUBLIC_SITE_LOGO || "https://prostore.norazo.com/logo.png";
