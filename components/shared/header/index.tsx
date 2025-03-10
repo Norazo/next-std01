@@ -19,6 +19,9 @@ const Header = () => {
                     <Button>
                         <UserIcon />
                     </Button>
+                    <Button>
+                        <ShoppingCart />
+                    </Button>
                 </div>
             </div>
         </header>

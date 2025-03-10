@@ -5,7 +5,7 @@ export const metadata = {
 const Homepage = () => {
     return (
         <div>
-            <h1>Prostore</h1>
+            <h1>Norazo</h1>
         </div>
     );
 }
