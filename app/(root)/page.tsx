@@ -1,12 +1,17 @@
+import sampleData from "@/sample-data";
+
+import ProductList from "@/components/shared/product/product-list";
+
 export const metadata = {
     title: 'Home',
 };
 
-const Homepage = () => {
+const Homepage = async () => {
+    console.log(sampleData);
     return (
-        <div>
-            <h1>Norazo</h1>
-        </div>
+        <>
+            <ProductList data={sampleData.products} title="All Products" limit={4} />
+        </>
     );
 }
 
