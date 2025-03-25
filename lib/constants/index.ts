@@ -10,3 +10,4 @@ export const siteVersion = process.env.NEXT_PUBLIC_SITE_VERSION || "1.0.0";
 export const siteIcon = process.env.NEXT_PUBLIC_SITE_ICON || "https://store.norazo.com/favicon.ico";
 export const siteFavicon = process.env.NEXT_PUBLIC_SITE_FAVICON || "https://store.norazo.com/favicon.ico";
 export const siteLogo = process.env.NEXT_PUBLIC_SITE_LOGO || "https://store.norazo.com/logo.png";
+export const productPerPage = 5;

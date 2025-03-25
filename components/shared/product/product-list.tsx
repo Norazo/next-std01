@@ -1,20 +1,5 @@
 import ProductCard from "./product-card";
-
-export interface Product {
-  name: string;
-  slug: string;
-  category: string;
-  description: string;
-  images: string[];
-  price: number;
-  brand: string;
-  rating: number;
-  numReviews: number;
-  stock: number;
-  isFeatured: boolean;
-  banner: string | null;
-  id?: string | number;
-}
+import { Product } from "@/types";
 
 const ProductList = ({ data, title, limit }: { data: Product[]; title?: string; limit?: number }) => {
     const limitData = limit ? data.slice(0, limit) : data;

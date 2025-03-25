@@ -1,8 +1,9 @@
-import { Product } from "./product-list";
 import Image from "next/image";
 import Link from "next/link";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import ProductPrice from "./product-price";
+import { convertToPlainObject } from "@/lib/utils";
+import { Product } from "@/types";
 
 const ProductCard = ({ product }: { product: Product }) => {
     return (
@@ -22,7 +23,7 @@ const ProductCard = ({ product }: { product: Product }) => {
                     <h2 className="text-sm font-medium">{product.name}</h2>
                 </Link>
                 <div className="flex-between gap-4">
-                    <p>{product.rating} Stars</p>
+                    <p>{Number(convertToPlainObject(product.rating))} Stars</p>
                     {product.stock > 0 ? (
                         <ProductPrice price={Number(product.price)} className="text-red-500" />
                     ) : (
